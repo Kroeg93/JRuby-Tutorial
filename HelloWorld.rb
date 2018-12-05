@@ -92,3 +92,34 @@ print "\nThe following lines are generated through a for loop\n"
 for i in 1..5
   puts "Value is => #{i}"
 end
+
+# NINTH TUTORIAL : CREATING A CLASS IN JRUBY
+
+puts "\nNINTH TUTORIAL : CREATING & USING CLASSES\n"
+
+class Employee
+  def information
+    puts "Name : Tim"
+    puts "Age : 25"
+    puts "Company : d.velop"
+  end
+  def salary
+    puts "First Name : Tim"
+    puts "Basic Scale : 12000-15000"
+    puts "Transport Allowance : 1500"
+    puts "Deductions : 2000"
+    puts "=========================="
+    puts "Total : 24000"
+  end
+end
+
+#Creating a new employee object
+emp = Employee.new
+
+#printing employee information
+puts "Employee Information List"
+puts "#{emp.information}"
+#printing employee salary
+puts "Employee Salary"
+puts "#{emp.salary}"
+
