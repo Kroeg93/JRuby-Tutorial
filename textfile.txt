@@ -1,0 +1,3 @@
+Hello, this textfile contains text which should be the output for the fourth tutorial : FILE READER
+
+Lorem Ipsum and so on...
