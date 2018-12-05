@@ -141,5 +141,34 @@ end
 
 #Creating instance of DeriveClass
 derive = Derive.new
-puts derive.addDerive
 puts derive.add
+puts "#{derive.addDerive}\n\n"
+
+
+# ELEVENTH TUTORIAL : METHOD OVERRIDING
+puts "ELEVENTH TUTORIAL : METHOD OVERRIDING\n"
+class BaseTwo
+  def addBase
+    print "Hello Base"
+  end
+end
+
+class DeriveTwo < BaseTwo
+  def addBase
+    print "Hello Derived Base - overwritten from class: DeriveTwo"
+  end
+
+  def addDerive
+    print "Hello Derived"
+  end
+end
+
+# Creating instance of Base class
+puts "Base Class:\nOutput:\n"
+baseInstanceTwo = BaseTwo.new
+puts "#{baseInstanceTwo.addBase}\n\n"
+# Creating instance of Derive class
+puts "Derive Class:\nOutput:\n"
+deriveInstanceTwo = DeriveTwo.new
+puts deriveInstanceTwo.addBase
+puts deriveInstanceTwo.addDerive
