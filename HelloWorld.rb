@@ -1,8 +1,10 @@
 require "java"                                              # Use Java classes
 
+#Classes for Tutorial 4
 java_import "java.io.BufferedReader"                        # include Java classes FileReader & BufferedReader
 java_import "java.io.FileReader"
-
+#Class for Tutorial 6
+java_import "java.util.TreeSet"
 
 # FIRST TUTORIAL "HELLO WORLD"
 #(output, literal)
@@ -35,8 +37,7 @@ puts factorial(5).to_i
 # better output (print for text),
 
 puts "\nTHIRD TUTORIAL : PRINT TABLE"
-puts "Enter number to print table
-:>"
+puts "Enter number to print table :>"
 n = gets
 #iterates the given block |i| Syntax upto(limit) {|i| block} -> self
 # for example 5.upto(10) { |i| print i, " "} #=> 5 6 7 8 9 10
@@ -61,6 +62,17 @@ while str
   str = bufferReader.readLine
 end
 
-# FIFTH TUTORIAL
-puts "FIFTH TUTORIAL ... ... ... "
-puts "\nHad to be outsourced into the file \n-> tutorial5.rb <- \n due to errors which were thrown"
+# FIFTH TUTORIAL "PRINTING COMMAND LINE ARGUMENTS IN JRUBY"
+puts "\nFIFTH TUTORIAL ... ... ... "
+puts "Had to be outsourced into the file \n-> tutorial5.rb <- \n due to errors which were thrown\n"
+
+# SIXTH TUTORIAL
+puts "\nSIXTH TUTORIAL\n"
+
+set = TreeSet.new
+set.add "Tim"
+set.add "Kröger"
+set.each do |v|
+  puts "values: #{v}"
+
+end
