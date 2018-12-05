@@ -123,3 +123,23 @@ puts "#{emp.information}"
 puts "Employee Salary"
 puts "#{emp.salary}"
 
+# TENTH TUTORIAL : INHERITANCE
+
+puts "\nTENTH TUTORIAL : INHERITANCE"
+
+class Base
+  def add
+    print "Hello Base"
+  end
+end
+
+class Derive < Base
+  def addDerive
+    print "Hello Derive"
+  end
+end
+
+#Creating instance of DeriveClass
+derive = Derive.new
+puts derive.addDerive
+puts derive.add
