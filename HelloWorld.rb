@@ -172,3 +172,30 @@ puts "Derive Class:\nOutput:\n"
 deriveInstanceTwo = DeriveTwo.new
 puts deriveInstanceTwo.addBase
 puts deriveInstanceTwo.addDerive
+
+# TWELFTH TUTORIAL : CASE
+puts "\nTWELFTH TUTORIAL CASE\n"
+puts "<<<=== USE OF CASE IN JRUBY ===>>>\n"
+
+print "*** Select your Choice ***\n"
+print " 1 Add \n"
+print " 2 Substract \n"
+print " 3 Multiply \n"
+print " 4 Divide \n"
+print " :> "
+choice = gets
+print " First Number :> "
+n1 = gets
+print " Second NUmber :> "
+n2  = gets
+case choice.to_i
+when 1
+  puts " Addition is = #{n1.to_i + n2.to_i}"
+when 2
+  puts " Substraction is = #{n1.to_i - n2.to_i}"
+when 3
+  puts " Multiplication is = #{n1.to_i * n2.to_i}"
+when 4
+  puts " Division is = #{n1.to_i / n2.to_i}"
+end
+
