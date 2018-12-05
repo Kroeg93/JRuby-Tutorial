@@ -1,10 +1,12 @@
 require "java"                                              # Use Java classes
 
-#Classes for Tutorial 4
+#Classes for Tutorial 4 - FileReader
 java_import "java.io.BufferedReader"                        # include Java classes FileReader & BufferedReader
 java_import "java.io.FileReader"
-#Class for Tutorial 6
+#Class for Tutorial 6 - TreeSet
 java_import "java.util.TreeSet"
+#Class for Tutorial 13 - Arraylist
+java_import "java.util.ArrayList"
 
 # FIRST TUTORIAL "HELLO WORLD"
 #(output, literal)
@@ -199,3 +201,11 @@ when 4
   puts " Division is = #{n1.to_i / n2.to_i}"
 end
 
+# THIRTEENTH TUTORIAL : ARRAY LIST
+puts "\nTHIRTEENTH TUTORIAL : ARRAY LIST\n"
+puts "Output: Arraylist\n"
+arrlist = ArrayList.new
+arrlist.add "Tim"
+arrlist.add "Lucie"
+arrlist.add "Kathi"
+puts "#{arrlist}"
