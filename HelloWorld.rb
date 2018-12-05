@@ -66,7 +66,7 @@ end
 puts "\nFIFTH TUTORIAL ... ... ... "
 puts "Had to be outsourced into the file \n-> tutorial5.rb <- \n due to errors which were thrown\n"
 
-# SIXTH TUTORIAL
+# SIXTH TUTORIAL "TREE SET"
 puts "\nSIXTH TUTORIAL\n"
 
 set = TreeSet.new
@@ -76,3 +76,5 @@ set.each do |v|
   puts "values: #{v}"
 
 end
+
+#
