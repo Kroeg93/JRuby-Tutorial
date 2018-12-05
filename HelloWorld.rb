@@ -1,6 +1,6 @@
 require "java"                                              # Use Java classes
 
-java_import "java.io.BufferedReader"
+java_import "java.io.BufferedReader"                        # include Java classes FileReader & BufferedReader
 java_import "java.io.FileReader"
 
 
@@ -44,15 +44,23 @@ n = gets
   puts "#{n} * #{i} = #{n.to_i * i.to_i}"
 end
 
-# FOURTH TUTORIAL ""
+# FOURTH TUTORIAL "FILE READER"
 
 puts "\nFOURTH TUTORIAL : FILE READER EXAMPLE"
 
+#Creates a new instance of class FileReader which takes in textfile.txt as its argument
 fileReader = FileReader.new "textfile.txt"
+#Creates a new instance of class BufferedReader
 bufferReader = BufferedReader.new fileReader
+#Takes in a line
 str = bufferReader.readLine
 
+# Loop until str is false (eof)
 while str
   puts str.to_s
   str = bufferReader.readLine
 end
+
+# FIFTH TUTORIAL
+puts "FIFTH TUTORIAL ... ... ... "
+puts "\nHad to be outsourced into the file \n-> tutorial5.rb <- \n due to errors which were thrown"

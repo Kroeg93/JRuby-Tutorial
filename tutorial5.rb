@@ -1,0 +1,7 @@
+# FIFTH TUTORIAL : "PRINTING COMMAND LINE ARGUMENTS IN JRUBY"
+puts "\nFIFTH TUTORIAL : PRINTING COMMAND LINE ARGUMENTS IN JRUBY"
+
+
+0.upto( "#{ARGV.length}".to_i) do |n|
+  puts "#{ARGV[n].to_s}"
+end
