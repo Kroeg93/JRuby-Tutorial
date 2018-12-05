@@ -77,4 +77,18 @@ set.each do |v|
 
 end
 
-#
+# EIGHT TUTORIAL "FOR LOOP"
+# SYNTAX :
+# for i in start_value .. end_value
+# ................
+#     Statement 1
+#     Statement 2
+# ..................
+# end
+
+# USING FOR LOOP
+puts "EIGHT TUTORIAL : FOR LOOP\n"
+print "\nThe following lines are generated through a for loop\n"
+for i in 1..5
+  puts "Value is => #{i}"
+end
